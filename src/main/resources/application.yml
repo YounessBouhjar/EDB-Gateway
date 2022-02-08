@@ -55,12 +55,9 @@ spring:
           force-pull: true
           searchPaths: myapp
 
-
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+    serviceUrl:
+      defaultZone: https://edb-server.herokuapp.com/eureka
   instance:
-    hostname: localhost
+    preferIpAddress: true
