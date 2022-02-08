@@ -9,7 +9,7 @@ spring:
     gateway:
       routes:
         - id: admin-service
-          uri: lb://admin-service
+          uri: https://edb-admin.herokuapp.com
           predicates:
             - Path=/admin/**
         - id: agent-service
